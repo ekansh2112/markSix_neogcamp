@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    /* background:  url("./minions.jpg")  no-repeat ; */
+    background-color: rgba(248, 248, 0, 0.39);
+    
+}
+nav{
+    position: sticky;
+    /* align-items: center; */
+    height: 15vh;
+    background: url(./minions.jpg) no-repeat;
+    background-size: cover;
+    
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar>img{
+    padding: 5px;
+
+}
+.input>img{
+    width: 500px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text_area{
+    margin-right: 30px;
+   
+}

@@ -53,7 +53,7 @@ nav {
 	background-color: #fff;
 	flex-wrap: wrap;
 	height: 30vh;
-	width: 100%;
+	width: 500px;
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #000;
@@ -68,8 +68,31 @@ nav {
 }
 h1,
 .text_area,
-.displayarea {
+.displayarea,
+.translate {
 	margin-bottom: 20px;
+}
+.btnstyle {
+	text-align: center;
+	height: 45px;
+}
+.translate {
+	padding: 10px 20px;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(50, 117, 180);
+	color: yellow;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-shadow: 0 0 5px #000;
+	transition: all 0.5s ease;
+}
+.translate:hover {
+	background-color: rgb(50, 130, 204);
+	color: rgb(248, 172, 7);
+	font-weight: 700;
+	font-size: larger;
 }
 
 .output > img {
@@ -82,7 +105,7 @@ h1,
 	}
 
 	#myinput {
-		width: 300px;
+		width: 100%;
 		margin-top: 5px;
 	}
 	.input > img {
@@ -102,7 +125,6 @@ h1,
 	.text_area {
 		margin-top: 5px;
 		margin-right: 0px;
-		padding-right: 0px;
 	}
 
 	.navbar p {

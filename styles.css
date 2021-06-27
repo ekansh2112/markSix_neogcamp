@@ -1,3 +1,4 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');");
 * {
 	margin: 0;
 	padding: 0;
@@ -6,10 +7,9 @@
 body {
 	height: 100vh;
 	background-color: rgba(248, 248, 0, 0.39);
-	overflow: hidden;
+	font-family: "Kaushan Script", cursive;
 }
 nav {
-	position: sticky;
 	height: 75px;
 	background: url(./minions.jpg) no-repeat;
 	background-size: cover;
@@ -43,10 +43,11 @@ nav {
 
 #myinput {
 	height: 100px;
-	width: 100%;
+	width: 96%;
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #000;
+	padding: 10px;
 }
 
 .displayarea {
@@ -87,6 +88,7 @@ h1,
 	text-transform: uppercase;
 	box-shadow: 0 0 5px #000;
 	transition: all 0.5s ease;
+	font-family: "Kaushan Script", cursive;
 }
 .translate:hover {
 	background-color: rgb(50, 130, 204);
@@ -105,8 +107,9 @@ h1,
 	}
 
 	#myinput {
-		width: 100%;
+		width: 94%;
 		margin-top: 5px;
+		padding: 10px;
 	}
 	.input > img {
 		width: 300px;

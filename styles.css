@@ -1,45 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    height: 100vh;
-    /* background:  url("./minions.jpg")  no-repeat ; */
-    background-color: rgba(248, 248, 0, 0.39);
-    
+body {
+	height: 100vh;
+	background-color: rgba(248, 248, 0, 0.39);
+	overflow: hidden;
 }
-nav{
-    position: sticky;
-    /* align-items: center; */
-    height: 15vh;
-    background: url(./minions.jpg) no-repeat;
-    background-size: cover;
-    
-    
+nav {
+	position: sticky;
+	height: 75px;
+	background: url(./minions.jpg) no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar>img{
-    padding: 5px;
 
+.navbar p {
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 900;
 }
-.input>img{
-    width: 500px;
+.navbar > img {
+	padding: 5px;
 }
-.main{
-    display: flex;
-    flex-direction: column;
+.input > img {
+	width: 800px;
 }
-.input{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.main {
+	display: flex;
+	flex-direction: column;
 }
-.text_area{
-    margin-right: 30px;
-   
+.input {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#myinput {
+	height: 100px;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #000;
+}
+
+.displayarea {
+	background-color: #fff;
+	flex-wrap: wrap;
+	height: 30vh;
+	width: 100%;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #000;
+}
+
+.output {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+	margin: 30px;
+}
+h1,
+.text_area,
+.displayarea {
+	margin-bottom: 20px;
+}
+
+.output > img {
+	width: 400px;
+}
+
+@media (max-width: 768px) {
+	.output > img {
+		display: none;
+	}
+
+	#myinput {
+		width: 300px;
+		margin-top: 5px;
+	}
+	.input > img {
+		width: 300px;
+	}
+	.displayarea {
+		width: auto;
+	}
+	.main {
+		display: flex;
+		justify-content: center;
+	}
+	.input {
+		display: flex;
+		justify-content: center;
+	}
+	.text_area {
+		margin-top: 5px;
+		margin-right: 0px;
+		padding-right: 0px;
+	}
+
+	.navbar p {
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
 }
